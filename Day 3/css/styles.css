@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+
+.App {
+  
+  font-family: 'Mountains of Christmas', sans-serif;
+  background-color: aliceblue;
+  width:25%;    
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;  
+  margin-bottom: 20%;
+  justify-content: center;
+  border-radius: 5%;
+
+  }
+
+  .txt{
+    margin-bottom: 10%;
+
+  }
+  h1{
+    text-align: center;
+    justify-content: center;
+  }
+
+  body{
+    background: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-attachment: fixed;
+  }

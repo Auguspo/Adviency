@@ -2,7 +2,7 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 .App {
   font-family: "Mountains of Christmas", sans-serif;
-  background-color: aliceblue;
+  
   width: 25%;
   display: flex;
   margin-left: auto;
@@ -37,7 +37,7 @@ h1 {
 
 .list {
   display: flex;
-  background-color: aliceblue;
+ 
   border-radius: 7%;
   width: 70%;
 

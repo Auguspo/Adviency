@@ -23,7 +23,7 @@ function FormRegalos() {
   }
 
   return (
-    <div className="question"> >
+    <div className="question"> 
       <form onSubmit={handleSubmit}>
         <div >
           <input

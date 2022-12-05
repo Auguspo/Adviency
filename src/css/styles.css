@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
-
+html {
+  overflow: hidden;
+}
 .App {
   font-family: "Mountains of Christmas", sans-serif;
   background-color: aliceblue;
@@ -11,14 +13,22 @@
   margin-bottom: 20%;
   justify-content: center;
   border-radius: 5%;
-  background: no-repeat center/100%  url("https://img.freepik.com/premium-vector/christmas-gnome-greeting-christmas-card-with-holiday-isolated-characters-snow-background_159025-277.jpg?w=2000");
+  background: 
+    url("https://img.freepik.com/premium-vector/christmas-gnome-greeting-christmas-card-with-holiday-isolated-characters-snow-background_159025-277.jpg?w=2000");
+    background-size: 50vh;
+    background-position: center;
+    background-attachment: fixed;
+ 
 
+    
 }
 
 body {
-  background: no-repeat center/100%  url("./background.jpg");
-
+  background: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .txt {
   margin-bottom: 10%;
 }
@@ -27,19 +37,17 @@ h1 {
   text-align: center;
   margin-bottom: 0%;
   font-size: 2.2vw;
-  font-weight:900;
-  
+  font-weight: 900;
 }
 
 .list {
-  display:flex;
+  display: flex;
   background-color: aliceblue;
-  border-radius:   7%;
-  
+  border-radius: 7%;
 }
-.list li{
-  width:70%;
-  font-size:1.3vw;
+.list li {
+  width: 70%;
+  font-size: 1.3vw;
 }
 
 ul {

@@ -1,8 +1,8 @@
-@import url("https:
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
 html, body {margin: 0; height: 100%; overflow: hidden}
 .App {
   font-family: "Mountains of Christmas", sans-serif;
-  
+  background-color: aliceblue;
   width: 25%;
   display: flex;
   margin-left: auto;
@@ -11,12 +11,11 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   margin-bottom: 20%;
   justify-content: center;
   border-radius: 5%;
-  background: url("https:
+  background: url("https://img.freepik.com/free-vector/christmas-pattern-with-snow_1045-460.jpg");
   background-size: 50vh;
   background-position: center;
   background-attachment: fixed;
 }
-
 body {
   background: url("./background.jpg");
   background-repeat: no-repeat;

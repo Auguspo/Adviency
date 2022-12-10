@@ -5,7 +5,9 @@ import Gift from "./gift"
 
 function FormRegalos() {
   const [gift, setGift] = useState("")
-  const [giftsList, setGiftsList] = useState(["Medias", "Gorras", "Tuki"])
+  const [quantity, setQuantity] = useState("1");
+  const [giftsList, setGiftsList] = useState([{name:"asd",
+cant: 1},])
 
   const handleChange = (e) => {
      setGift(e.target.value)
@@ -13,18 +15,24 @@ function FormRegalos() {
   }
 
   const handleSubmit = (e) => {
-    const rep = giftsList.filter((el) => el !== gift)
-    setGiftsList([...rep, gift])
-    setGift("")
+    const rep = giftsList.filter((el) => el.name !== gift.name )
+
+
+
+
+    setGiftsList([...rep, {name:gift, cant:+1}])
+    setGift("") //Borrar input
     
     console.log(giftsList)
     e.preventDefault()
-    
+   
+
+    // https://github.com/JoelTokatli/adviency/blob/main/dia-8-adviency/src/Components/GiftsCard.jsx
     
   }
 
   function handleRemove(gift) {
-    const newList = giftsList.filter((el) => el !== gift)
+    const newList = giftsList.filter((el) => el.name !== gift).length <giftsList
     setGiftsList(newList)
     console.log(newList)
   }
@@ -45,16 +53,27 @@ function FormRegalos() {
             type="text"
             name="gift"
             placeholder="Que regalo queres?"
-            value={gift}
+            value={gift.name}
             onChange={handleChange}
           />
+          <input
+          type="number"
+          id="number"
+          required="required"
+          min={1}
+          max={1000}
+          onChange={(e) => {
+            setQuantity(e.target.value);
+          }}
+        />
           <button  className="button" type="submit">Agregar</button> 
         </div>
         <ul>
           {giftsList.map((gift, index) => (
             <div className="list">
-              <li key={index}> 🎄 {gift}  </li>
-              <button className="button" type="button" onClick={() => handleRemove(gift)}>
+              <li key={index}> 🎄 {gift.name} x{gift.cant}</li>
+              
+              <button className="button" type="button" onClick={() => handleRemove(gift.name)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

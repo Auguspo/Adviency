@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas");
+html, body {margin: 0; height: 100%; overflow: hidden}
+.App {
+  font-family: "Mountains of Christmas", sans-serif;
+  background-color: aliceblue;
+  width: 25%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  justify-content: center;
+  border-radius: 5%;
+  background: url("https://img.freepik.com/free-vector/christmas-pattern-with-snow_1045-460.jpg");
+  background-size: 50vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+body {
+  background: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.txt {
+  margin-bottom: 10%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1vh;
+  font-size: 2.2vw;
+  font-weight: 900;
+}
+
+.list {
+  display: flex;
+ 
+  border-radius: 7%;
+  width: 70%;
+
+  margin: auto;
+  margin-bottom: 2%;
+}
+.list li {
+  width: 90%;
+  font-size: 1.3vw; 
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.borrartodo{ display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  
+   }
+
+   .inputerino{
+    justify-content: center;
+    display: flex;
+    border-radius: 10%;
+    
+   }
+   
+
+   .input1{
+    width: 50%;
+    border-radius: 12%;
+    margin: 0 0.1vw 0 .5vw;
+    border: 4px dotted green;
+    outline:3px dashed red;
+    outline-offset:-5px;
+    
+   }
+   .input2{
+    width: 10%;
+    border-radius: 12%;
+    margin: 0 1vw 0 .5vw;
+    border: 4px dotted green;
+    outline:3px dashed red;
+    outline-offset:-5px;
+    
+   }

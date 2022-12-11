@@ -17,10 +17,7 @@ cant: 1},])
   const handleSubmit = (e) => {
     const rep = giftsList.filter((el) => el.name !== gift.name )
 
-
-
-
-    setGiftsList([...rep, {name:gift, cant:+1}])
+    setGiftsList([...rep, {name:gift, cant:quantity}])
     setGift("") //Borrar input
     
     console.log(giftsList)
@@ -49,19 +46,19 @@ cant: 1},])
   <Gift count={ giftsList.length } />
       <form onSubmit={handleSubmit}>
         <div className="inputerino">
-          <input
+          <input className="input1"
             type="text"
             name="gift"
             placeholder="Que regalo queres?"
             value={gift.name}
             onChange={handleChange}
           />
-          <input
+          <input className="input2"
           type="number"
           id="number"
           required="required"
           min={1}
-          max={1000}
+          max={10}
           onChange={(e) => {
             setQuantity(e.target.value);
           }}

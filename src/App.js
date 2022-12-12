@@ -1,5 +1,5 @@
 import "./css/styles.css"
-import FormRegalos from "../Day 8/components/form.js"
+import FormRegalos from "./components/form.js"
 
 function App() {
   return (

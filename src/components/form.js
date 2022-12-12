@@ -5,8 +5,9 @@ import Gift from "./gift"
 
 function FormRegalos() {
   const [gift, setGift] = useState("")
-  const [quantity, setQuantity] = useState("");
-  const [giftsList, setGiftsList] = useState([])
+  const [quantity, setQuantity] = useState("1");
+  const [giftsList, setGiftsList] = useState([{name:"asd",
+cant: 1},])
 
   const handleChange = (e) => {
      setGift(e.target.value)
@@ -23,12 +24,12 @@ function FormRegalos() {
     e.preventDefault()
    
 
-   
+    // https://github.com/JoelTokatli/adviency/blob/main/dia-8-adviency/src/Components/GiftsCard.jsx
     
   }
 
   function handleRemove(gift) {
-    const newList = giftsList.filter((el) => el.name !== gift).length <giftsList
+    const newList = giftsList.filter((el) => el.name !== gift.name)
     setGiftsList(newList)
     console.log(newList)
   }
@@ -69,7 +70,7 @@ function FormRegalos() {
             <div className="list">
               <li key={index}> 🎄 {gift.name} x{gift.cant}</li>
               
-              <button className="button" type="button" onClick={() => handleRemove(gift.name)}>
+              <button className="button" type="button" onClick={() => handleRemove(gift)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
